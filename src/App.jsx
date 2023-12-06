@@ -6,8 +6,10 @@ function App() {
   
   return (
     <>
-      <Rain />
-      <Header />
+      <div className='main'>
+        <Rain />
+        <Header />
+      </div>
     </>
   )
 }
