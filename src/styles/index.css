@@ -21,6 +21,10 @@ body,
   height: 100%;
 }
 
+#root {
+  color: white;
+}
+
 #anim {
   position: absolute;
   top: 0;

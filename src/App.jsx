@@ -10,6 +10,7 @@ function App() {
       <div className='main'>
         <Rain />
         <Header />
+        <Hero />
       </div>
     </>
   )
