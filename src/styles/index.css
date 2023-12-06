@@ -1,4 +1,15 @@
+@font-face {
+  font-family: open-sans;
+  src: url("./OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: Sora, ;
+  src: url("./Sora-Regular.ttf");
+}
+
 * {
+  font-family: open-sans, sans-serif;
   padding: 0px;
   margin: 0px;
 }
