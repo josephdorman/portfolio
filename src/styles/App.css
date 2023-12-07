@@ -3,5 +3,7 @@
 }
 
 section {
+  display: flex;
+  height: 100vh;
   background-color: #111119;
 }
