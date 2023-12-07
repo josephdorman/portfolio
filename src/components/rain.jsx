@@ -15,11 +15,11 @@ function Rain() {
     increment += randoFiver;
     
     // add in a new raindrop with various randomizations to certain CSS properties
-    drops += `<div class="drop" style="left:${increment}%;bottom:${randoFiver + randoFiver - 1 + 90}%;animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;">
+    drops += `<div class="drop" style="left:${increment}%;bottom:${randoFiver + randoFiver - 1 + 85}%;animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;">
                 <div class="stem" style="animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;"></div>
                 <div class="splat" style="animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;"></div>
               </div>`;
-    backDrops += `<div class="drop" style="right:${increment}%;bottom:${randoFiver + randoFiver - 1 + 90}%;animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;">
+    backDrops += `<div class="drop" style="right:${increment}%;bottom:${randoFiver + randoFiver - 1 + 85}%;animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;">
                     <div class="stem" style="animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;"></div>
                     <div class="splat" style="animation-delay:0.${randoHundo}s;animation-duration:0.5${randoHundo}s;"></div>
                   </div>`;
