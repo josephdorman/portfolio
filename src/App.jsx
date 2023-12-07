@@ -1,6 +1,7 @@
 import Rain from './components/rain'
 import Header from './components/header'
 import Hero from './components/hero'
+import About from './components/about'
 import './styles/App.css'
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
         <Header />
         <Hero />
       </div>
+      <section>
+        <About />
+      </section>
     </>
   )
 }
