@@ -11,20 +11,21 @@
 
 .desc {
   max-width: 700px;
+  font-size: 18px;
   text-align: center;
 }
 
 .title {
   display: flex;
   gap: 15px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Sora;
   color: grey;
 }
 
 .title span {
   color: white;
-  font-size: 40px;
+  font-size: 52px;
   margin-right: 51px;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .scroller {
-  max-width: 600px;
+  max-width: 650px;
   overflow: hidden;
 
   -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
