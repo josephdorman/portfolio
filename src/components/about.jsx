@@ -21,14 +21,14 @@ function About() {
               <li>UI/UX</li>
               <li>GITHUB</li>
               <li>MONGODB</li>
-              <li>REACT</li>
-              <li>NODEJS</li>
-              <li>JAVASCRIPT</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>UI/UX</li>
-              <li>GITHUB</li>
-              <li>MONGODB</li>
+              <li aria-hidden="true" >REACT</li>
+              <li aria-hidden="true" >NODEJS</li>
+              <li aria-hidden="true" >JAVASCRIPT</li>
+              <li aria-hidden="true" >HTML</li>
+              <li aria-hidden="true" >CSS</li>
+              <li aria-hidden="true" >UI/UX</li>
+              <li aria-hidden="true" >GITHUB</li>
+              <li aria-hidden="true" >MONGODB</li>
             </ul>
           </div>
         </div>
