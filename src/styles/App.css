@@ -7,3 +7,21 @@ section {
   height: 100vh;
   background-color: #111119;
 }
+
+.title {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  font-family: Sora;
+  color: grey;
+}
+
+.title span {
+  color: white;
+  font-size: 52px;
+  margin-right: 51px;
+}
+
+.title p {
+  align-self: center;
+}

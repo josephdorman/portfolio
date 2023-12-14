@@ -15,24 +15,6 @@
   text-align: center;
 }
 
-.title {
-  display: flex;
-  gap: 15px;
-  font-size: 18px;
-  font-family: Sora;
-  color: grey;
-}
-
-.title span {
-  color: white;
-  font-size: 52px;
-  margin-right: 51px;
-}
-
-.title p {
-  align-self: center;
-}
-
 .carousel {
   display: flex;
   flex-direction: column;
@@ -49,7 +31,13 @@
   max-width: 650px;
   overflow: hidden;
 
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
@@ -123,4 +111,3 @@
     font-size: 24px;
   }
 }
-
