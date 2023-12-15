@@ -16,7 +16,7 @@ function Projects() {
     ref.current.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
   }
 
-  function onPointerLeave(e) {
+  function onPointerLeave() {
     ref.current.style.transition = `all 1s`;
     ref.current.style.transform = `translateY(0px) translateX(0px)`;
   }
