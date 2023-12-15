@@ -17,8 +17,8 @@ function Projects() {
   }
 
   function onPointerMove(e) {
-    let diffX = (centerX - e.clientX) / 12;
-    let diffY = (centerY - e.clientY) / 12;
+    let diffX = (centerX - e.clientX) / 15;
+    let diffY = (centerY - e.clientY) / 15;
 
     ref.current.style.transition = `none`;
     ref.current.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
