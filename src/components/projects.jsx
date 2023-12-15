@@ -12,7 +12,13 @@ function Projects() {
     let diffX = (centerX - e.clientX) / 12;
     let diffY = (centerY - e.clientY) / 12;
 
+    ref.current.style.transition = `none`;
     ref.current.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
+  }
+
+  function onPointerLeave(e) {
+    ref.current.style.transition = `all 1s`;
+    ref.current.style.transform = `translateY(0px) translateX(0px)`;
   }
 
   return (
@@ -23,7 +29,11 @@ function Projects() {
           <span>PROJECTS</span>
         </h2>
         <div className="project-container">
-          <div onPointerMove={onPointerMove} className="project-card lucid">
+          <div
+            onPointerLeave={onPointerLeave}
+            onPointerMove={onPointerMove}
+            className="project-card lucid"
+          >
             <img ref={ref} src={lucid} alt="" />
           </div>
         </div>
