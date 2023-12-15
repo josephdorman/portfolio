@@ -8,6 +8,14 @@ function Projects() {
           <p>( 02 )</p>
           <span>PROJECTS</span>
         </h2>
+        <div className="project-container">
+          <div className="project-card lucid">
+            <p>BOT PROJECT</p>
+          </div>
+          <div className="project-card generator">
+            <p>GEN PROJECT</p>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -5,5 +5,39 @@
   justify-content: center;
   margin: auto;
   padding: 8px;
+  width: 100%;
   max-width: 1400px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  height: 400px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-card {
+  opacity: 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.project-card:hover {
+  opacity: 100%;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.project-card.lucid {
+  background-image: url("../../public/lucidbot.jpg");
+}
+
+.project-card.generator {
+  background-image: url("../../public/cv-generator-preview.png");
 }
