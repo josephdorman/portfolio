@@ -14,9 +14,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 30px;
-  height: 400px;
+  height: 300px;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .project-card {
@@ -41,8 +41,8 @@
 }
 
 .project-card.lucid img {
-  height: 450px;
-  width: 450px;
+  height: 350px;
+  width: 350px;
 }
 
 .project-card.generator {
