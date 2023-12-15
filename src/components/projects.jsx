@@ -1,3 +1,4 @@
+import lucid from "/lucidbot.jpg";
 import "../styles/projects.css";
 
 function Projects() {
@@ -10,10 +11,7 @@ function Projects() {
         </h2>
         <div className="project-container">
           <div className="project-card lucid">
-            <p>BOT PROJECT</p>
-          </div>
-          <div className="project-card generator">
-            <p>GEN PROJECT</p>
+            <img src={lucid} alt="" />
           </div>
         </div>
       </div>

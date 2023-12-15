@@ -11,15 +11,21 @@
 
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 30px;
   height: 400px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 400px;
 }
 
 .project-card {
+  height: 1fr;
+  width: 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   opacity: 50%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -34,8 +40,9 @@
   filter: grayscale(0%);
 }
 
-.project-card.lucid {
-  background-image: url("../../public/lucidbot.jpg");
+.project-card.lucid img {
+  height: 450px;
+  width: 450px;
 }
 
 .project-card.generator {
