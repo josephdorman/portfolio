@@ -27,6 +27,7 @@
   align-items: center;
   overflow: hidden;
   opacity: 50%;
+  transition: filter 0.5s, -webkit-filter 0.5s;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 
@@ -35,6 +36,7 @@
 }
 
 .project-card:hover {
+  transition: filter 0.5s, -webkit-filter 0.5s;
   opacity: 100%;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);

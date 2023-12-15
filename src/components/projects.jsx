@@ -8,6 +8,14 @@ function Projects() {
   let centerX = window.innerWidth / 2;
   let centerY = window.innerHeight / 2;
 
+  function onPointerEnter(e) {
+    let diffX = (centerX - e.clientX) / 12;
+    let diffY = (centerY - e.clientY) / 12;
+
+    ref.current.style.transition = `all 0.2s`;
+    ref.current.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
+  }
+
   function onPointerMove(e) {
     let diffX = (centerX - e.clientX) / 12;
     let diffY = (centerY - e.clientY) / 12;
@@ -31,6 +39,7 @@ function Projects() {
         <div className="project-container">
           <div
             onPointerLeave={onPointerLeave}
+            onPointerEnter={onPointerEnter}
             onPointerMove={onPointerMove}
             className="project-card lucid"
           >
