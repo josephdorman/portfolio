@@ -1,32 +1,29 @@
-import { useRef } from "react";
 import lucid from "/lucidbot.jpg";
 import "../styles/projects.css";
 
 function Projects() {
-  const ref = useRef(null);
-
   let centerX = window.innerWidth / 2;
   let centerY = window.innerHeight / 2;
 
   function onPointerEnter(e) {
-    let diffX = (centerX - e.clientX) / 12;
-    let diffY = (centerY - e.clientY) / 12;
+    let diffX = (centerX - e.clientX) / 15;
+    let diffY = (centerY - e.clientY) / 15;
 
-    ref.current.style.transition = `all 0.2s`;
-    ref.current.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
+    e.target.style.transition = `all 0.1s`;
+    e.target.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
   }
 
   function onPointerMove(e) {
     let diffX = (centerX - e.clientX) / 15;
     let diffY = (centerY - e.clientY) / 15;
 
-    ref.current.style.transition = `none`;
-    ref.current.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
+    e.target.style.transition = `none`;
+    e.target.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
   }
 
-  function onPointerLeave() {
-    ref.current.style.transition = `all 1s`;
-    ref.current.style.transform = `translateY(0px) translateX(0px)`;
+  function onPointerLeave(e) {
+    e.target.style.transition = `all 1s`;
+    e.target.style.transform = `translateY(0px) translateX(0px)`;
   }
 
   return (
@@ -43,7 +40,15 @@ function Projects() {
             onPointerMove={onPointerMove}
             className="project-card lucid"
           >
-            <img ref={ref} src={lucid} alt="" />
+            <img src={lucid} alt="" />
+          </div>
+          <div
+            onPointerLeave={onPointerLeave}
+            onPointerEnter={onPointerEnter}
+            onPointerMove={onPointerMove}
+            className="project-card lucid"
+          >
+            <img src={lucid} alt="" />
           </div>
         </div>
       </div>
