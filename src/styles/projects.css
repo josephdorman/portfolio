@@ -12,6 +12,7 @@
   display: flex;
   padding: 20px;
   gap: 50px;
+  margin-top: 20px;
 }
 
 .card {
@@ -47,4 +48,19 @@
   font-size: 34px;
   text-transform: uppercase;
   border-top: var(--border);
+}
+
+.card:hover > .card-title {
+  background-color: white;
+  color: rgb(21, 21, 32);
+}
+
+.card:hover > .card-title::before,
+.card:focus > .card-title::before {
+  content: "< ";
+}
+
+.card:hover > .card-title::after,
+.card:focus > .card-title::before {
+  content: " >";
 }

@@ -1,4 +1,4 @@
-import lucid from "/lucidbotLogo.png";
+import lucid from "/lucidbotLogo.svg";
 import vizion from "/vizionLogo.svg";
 import "../styles/projects.css";
 
