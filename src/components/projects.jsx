@@ -1,33 +1,8 @@
-import lucid from "/lucidbot.jpg";
-import gen from "/cv-generator-preview.png";
+import lucid from "/lucidbotLogo.png";
+import vizion from "/vizionLogo.svg";
 import "../styles/projects.css";
 
 function Projects() {
-  let centerX = window.innerWidth / 2;
-  let centerY = window.innerHeight / 2;
-
-  function onPointerEnter(e) {
-    console.log(e.target);
-    let diffX = (centerX - e.clientX) / 15;
-    let diffY = (centerY - e.clientY) / 15;
-
-    e.target.style.transition = `all 0.1s`;
-    e.target.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
-  }
-
-  function onPointerMove(e) {
-    let diffX = (centerX - e.clientX) / 40;
-    let diffY = (centerY - e.clientY) / 40;
-
-    e.target.style.transition = `none`;
-    e.target.style.transform = `translateY(${diffY}px) translateX(${diffX}px)`;
-  }
-
-  function onPointerLeave(e) {
-    e.target.style.transition = `all 1s`;
-    e.target.style.transform = `translateY(0px) translateX(0px)`;
-  }
-
   return (
     <>
       <div className="projects">
@@ -36,23 +11,17 @@ function Projects() {
           <span>PROJECTS</span>
         </h2>
         <div className="project-container">
-          <div className="project-card lucid">
-            <img
-              onPointerLeave={onPointerLeave}
-              onPointerEnter={onPointerEnter}
-              onPointerMove={onPointerMove}
-              src={lucid}
-              alt=""
-            />
+          <div className="card">
+            <div className="card-content">
+              <img className="card-img" src={vizion} alt="lucidbot" />
+            </div>
+            <h3 className="card-title">Vision</h3>
           </div>
-          <div className="project-card gen">
-            <img
-              onPointerLeave={onPointerLeave}
-              onPointerEnter={onPointerEnter}
-              onPointerMove={onPointerMove}
-              src={gen}
-              alt=""
-            />
+          <div className="card">
+            <div className="card-content">
+              <img className="card-img" src={lucid} alt="lucidbot" />
+            </div>
+            <h3 className="card-title">Lucid</h3>
           </div>
         </div>
       </div>
