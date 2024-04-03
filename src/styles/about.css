@@ -23,10 +23,6 @@
   margin-top: 65px;
 }
 
-.carousel p {
-  color: grey;
-}
-
 .scroller {
   max-width: 650px;
   overflow: hidden;

@@ -10,6 +10,7 @@ function Projects() {
           <p>( 02 )</p>
           <span>PROJECTS</span>
         </h2>
+        <p className="flavor-text">( Pick a project, any project )</p>
         <div className="project-container">
           <div className="card">
             <div className="card-content">

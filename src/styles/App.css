@@ -25,3 +25,7 @@ section {
 .title p {
   align-self: center;
 }
+
+.flavor-text {
+  color: grey;
+}
