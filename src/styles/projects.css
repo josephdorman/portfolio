@@ -73,6 +73,18 @@
   height: 373.3px;
 }
 
+@media (max-width: 481px) {
+  .card-img {
+    width: 270px;
+    height: 335.97px;
+  }
+
+  .card-info {
+    width: 270px;
+    height: 335.97px;
+  }
+}
+
 .card-btn {
   cursor: pointer;
   display: flex;
