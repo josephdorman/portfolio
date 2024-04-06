@@ -3,6 +3,7 @@ import expressLogo from "../assets/express.svg";
 import nodejsLogo from "../assets/nodejs.svg";
 import socketioLogo from "../assets/socketio.svg";
 import mongodbLogo from "../assets/mongodb.svg";
+import discordjsLogo from "../assets/discordjs.svg";
 import code from "../assets/code.svg";
 import demo from "../assets/demo.svg";
 import lucid from "/lucidbotLogo.svg";
@@ -78,6 +79,44 @@ function Projects() {
             <div className="card-wrapper">
               <div className="card-content">
                 <img className="card-img" src={lucid} alt="lucidbot" />
+              </div>
+              <div className="card-info">
+                <nav>
+                  <p>{"|"}</p>
+                  <button className="card-btn">
+                    <img className="icon-sm" src={demo} alt="" />
+                    <span>Demo</span>
+                  </button>
+                  <p>{"|"}</p>
+                  <button className="card-btn">
+                    <img className="icon-sm" src={code} alt="" />
+                    <span>Code</span>
+                  </button>
+                  <p>{"|"}</p>
+                </nav>
+                <div className="card-desc">
+                  <h4 className="card-desc-title">Description</h4>
+                  <p>
+                    Lucid is an open source discord bot designed for playing
+                    music utilizing discords voice api. Provides full
+                    documentation to all commands, and how to setup the bot for
+                    yourself or server.
+                  </p>
+                </div>
+                <div className="card-tag-wrapper">
+                  <div className="card-tag">
+                    <img className="icon-xs" src={discordjsLogo} alt="" />
+                    <span>discordjs</span>
+                  </div>
+                  <div className="card-tag">
+                    <img className="icon-xs" src={nodejsLogo} alt="" />
+                    <span>node-js</span>
+                  </div>
+                  <div className="card-tag">
+                    <img className="icon-xs" src={expressLogo} alt="" />
+                    <span>express</span>
+                  </div>
+                </div>
               </div>
               <h3 className="card-title">Lucid</h3>
             </div>
