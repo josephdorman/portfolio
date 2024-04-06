@@ -16,12 +16,14 @@
 }
 
 .card {
+  display: flex;
+}
+
+.card-wrapper {
   --border: 8px solid white;
 
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  max-height: 800px;
   background-color: rgb(21, 21, 32);
   border-radius: 5px;
   border: var(--border);
@@ -32,14 +34,99 @@
   justify-content: center;
   flex: 1;
   padding: 10px;
+
+  opacity: 20%;
+  max-height: 373.3px;
+  max-width: 300px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  max-height: 373.3px;
+  max-width: 300px;
+}
+
+.card-info nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.card-desc {
+  text-align: center;
+}
+
+.card-desc-title {
+  text-decoration: underline;
+  margin-bottom: 3px;
 }
 
 .card-img {
-  /*280px 225px;*/
-  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
 
-  height: 373.3px;
-  width: 300px;
+.card-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 2px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  width: 80px;
+  height: 22px;
+}
+
+.card-btn span {
+  margin-bottom: 2px;
+}
+
+.card-btn:hover {
+  font-size: 15px;
+}
+
+.card-tag-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: lowercase;
+  background-color: #242425;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.card-tag span {
+  margin-bottom: 2px;
+}
+
+.icon-sm {
+  width: 20px;
+}
+
+.icon-xs {
+  width: 16px;
 }
 
 .card-title {
@@ -50,17 +137,17 @@
   border-top: var(--border);
 }
 
-.card:hover > .card-title {
+.card-wrapper:hover > .card-title {
   background-color: white;
   color: rgb(21, 21, 32);
 }
 
-.card:hover > .card-title::before,
-.card:focus > .card-title::before {
+.card-wrapper:hover > .card-title::before,
+.card-wrapper:focus > .card-title::before {
   content: "< ";
 }
 
-.card:hover > .card-title::after,
-.card:focus > .card-title::before {
+.card-wrapper:hover > .card-title::after,
+.card-wrapper:focus > .card-title::before {
   content: " >";
 }
