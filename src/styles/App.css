@@ -5,7 +5,7 @@
 section {
   display: flex;
   height: 100vh;
-  background-color: #111119;
+  background-color: var(--primary);
 }
 
 .title {
@@ -17,7 +17,7 @@ section {
 }
 
 .title span {
-  color: white;
+  color: var(--secondary);
   font-size: var(--fs-52);
   margin-right: 51px;
 }

@@ -31,6 +31,9 @@ body,
   --fs-16: 1rem;
   --fs-14: 0.875rem;
 
+  --primary: #111119;
+  --secondary: #ffffff;
+
   height: 100%;
 }
 
@@ -50,7 +53,7 @@ body,
   margin: 0;
   overflow: hidden;
   z-index: -1;
-  background: linear-gradient(to bottom, #202020, #111119);
+  background: linear-gradient(to bottom, #202020, var(--primary));
 }
 
 .rain {
