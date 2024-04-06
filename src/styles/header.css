@@ -37,10 +37,10 @@ header {
 }
 
 .nav-buttons li button {
-  color:white;
+  color: white;
   background-color: transparent;
   font-family: Sora, sans-serif;
-  font-size: 14px;
+  font-size: var(--fs-18);
   border: none;
   position: relative;
 }
@@ -68,5 +68,3 @@ header {
     padding: 8px 16px;
   }
 }
-
-

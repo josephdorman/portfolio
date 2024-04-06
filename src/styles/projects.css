@@ -133,7 +133,7 @@
 .card-title {
   text-align: center;
   padding: 10px;
-  font-size: 34px;
+  font-size: var(--fs-34);
   text-transform: uppercase;
   border-top: var(--border);
 }

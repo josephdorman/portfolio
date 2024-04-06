@@ -11,14 +11,14 @@ section {
 .title {
   display: flex;
   gap: 15px;
-  font-size: 18px;
+  font-size: var(--fs-18);
   font-family: Sora;
   color: grey;
 }
 
 .title span {
   color: white;
-  font-size: 52px;
+  font-size: var(--fs-52);
   margin-right: 51px;
 }
 

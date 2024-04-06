@@ -18,38 +18,37 @@
 }
 
 .hero-title {
-  font-size: 82px;
+  font-size: var(--fs-82);
 }
 
 .hero-desc {
-  font-size: 24px;
+  font-size: var(--fs-24);
 }
 
 @media (max-width: 781px) {
   .hero-title {
-    font-size: 56px;
+    font-size: var(--fs-56);
   }
   .hero-desc {
-    font-size: 18px;
+    font-size: var(--fs-18);
   }
-
 }
 
 @media (max-width: 481px) {
   .hero-title {
     text-align: center;
-    font-size: 42px;
+    font-size: var(--fs-42);
   }
   .hero-desc {
-    font-size: 16px;
+    font-size: var(--fs-16);
   }
 }
 
 @media (max-width: 381px) {
   .hero-title {
-    font-size: 52px;
+    font-size: var(--fs-52);
   }
   .hero-desc {
-    font-size: 18px;
+    font-size: var(--fs-18);
   }
 }
