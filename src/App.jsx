@@ -1,5 +1,6 @@
 import Rain from "./components/rain";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import About from "./components/about";
 import Projects from "./components/projects";
@@ -23,6 +24,9 @@ function App() {
       <section>
         <Contact />
       </section>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
