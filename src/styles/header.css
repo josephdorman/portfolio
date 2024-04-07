@@ -24,6 +24,7 @@ header {
 }
 
 #logo-img {
+  cursor: pointer;
   height: 25px;
 }
 
@@ -43,6 +44,7 @@ header {
   font-size: var(--fs-18);
   border: none;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-buttons li button::before {
