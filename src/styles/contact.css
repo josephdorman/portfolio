@@ -1,0 +1,63 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 8px;
+  max-width: 1400px;
+}
+
+.contact-info {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-rows: 70px;
+}
+
+.contact-link {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: var(--fs-34);
+}
+
+.contact-email {
+  font-size: var(--fs-28);
+}
+
+.break {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.break span {
+  background-color: var(--primary);
+  padding: 0 10px;
+}
+
+#or {
+  font-size: var(--fs-18);
+}
+
+.contact-link:hover::before {
+  content: "> ";
+}
+
+.contact-link:hover::after {
+  content: " <";
+}
+
+.contact-link:hover {
+  font-size: var(--fs-42);
+}
+
+.icon-md {
+  width: 40px;
+}
